@@ -24,7 +24,9 @@ public class App {
 
            // ADHero ad=new ADHero("小小");
 
-
+            int i=3;
+            Integer in=new Integer(i);
+            System.out.println(in instanceof Number);
 
         } catch (Exception e) {
             e.printStackTrace();
