@@ -28,7 +28,7 @@ public class TestNumber {
         String b = "afsd";
 
 
-        String format = "%s,%d,%n%s";
+        String format = "%s,%d,%n%s %n";
 
         System.out.printf(format, a, i, b);
 
@@ -38,6 +38,9 @@ public class TestNumber {
         String str1=Character.toString(c);
         String str12=ct.toString();
 
+        char[] crs=name.toCharArray();
+
+        System.out.println(name.substring(1,2));
 
     }
 }
