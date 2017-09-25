@@ -35,12 +35,12 @@ public class TestNumber {
         char c = 'a';
         Character ct = c;
 
-        String str1=Character.toString(c);
-        String str12=ct.toString();
+        String str1 = Character.toString(c);
+        String str12 = ct.toString();
 
-        char[] crs=name.toCharArray();
+        char[] crs = name.toCharArray();
 
-        System.out.println(name.substring(1,2));
+        System.out.println(name.substring(1, 2));
 
     }
 }
