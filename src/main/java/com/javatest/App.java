@@ -1,6 +1,6 @@
 package com.javatest;
 
-import com.charactor.ADHero;
+import com.charactor.EnemyHeroIsDeadException;
 import com.charactor.Hero;
 
 /**
@@ -22,15 +22,36 @@ public class App {
             wn.damage=10;
             wn.name="test";*/
 
-           // ADHero ad=new ADHero("小小");
+            // ADHero ad=new ADHero("小小");
 
-            int i=3;
-            Integer in=new Integer(i);
+            int i = 3;
+            Integer in = new Integer(i);
             System.out.println(in instanceof Number);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        Hero a=new Hero("a");
+        Hero b=new Hero("b");
+        b.hp=0;
+
+      /*  try{
+            a.attackHero(b);
+        }
+        catch (EnemyHeroIsDeadException e)
+        {
+            e.printStackTrace();
+        }*/
+
+        try{
+            throw new EnemyHeroIsDeadException("afd");
+        }
+        catch (EnemyHeroIsDeadException e)
+        {
+            e.printStackTrace();
+        }
+
     }
 }
 
