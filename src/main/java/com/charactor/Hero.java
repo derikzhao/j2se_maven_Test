@@ -13,14 +13,20 @@ public class Hero {
 
     public Hero(String name) {
         this.name = name;
-        System.out.println("父类：" + name);
+        //  System.out.println(name);
     }
 
-    public void attackHero(Hero h) throws EnemyHeroIsDeadException{
-        if(h.hp == 0){
-            throw new EnemyHeroIsDeadException(h.name + " 已经挂了,不许要施放技能" );
+    public void attackHero(Hero h) throws EnemyHeroIsDeadException {
+        if (h.hp == 0) {
+            throw new EnemyHeroIsDeadException(h.name + " 已经挂了,不许要施放技能");
         }
     }
+
+    // 重写toString方法
+    public String toString() {
+        return name;
+    }
+
 
    /* private static Hero h;
 

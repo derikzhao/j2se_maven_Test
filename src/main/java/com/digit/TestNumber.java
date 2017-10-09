@@ -42,5 +42,21 @@ public class TestNumber {
 
         System.out.println(name.substring(1, 2));
 
+        System.out.println(GetNum(3));
+
+
     }
+
+    public static String GetNum(int n) {
+        if (n == 0) {
+            return "";
+        }
+        if (n % 2 == 0) {
+            return GetNum((n - 2) / 2) + "2";
+        } else
+            return GetNum((n - 1) / 2) + "1";
+
+    }
+
 }
+
