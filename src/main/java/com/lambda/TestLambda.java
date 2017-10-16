@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class TestLambda {
     public static void main(String[] args) {
-
+        testAggregate();
     }
 
     public static void testLambda() {
@@ -22,7 +22,7 @@ public class TestLambda {
         for (int i = 0; i < 50000; i++) {
             heros.add(new Hero("hero " + i));
         }
-        //heros.stream().filter(h -> h.hp > 0);
+        heros.stream().filter(h -> h.hp > 0);
 
     }
 }

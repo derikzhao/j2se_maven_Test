@@ -26,5 +26,8 @@
         <module name="j2se_maven" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="j2se_maven" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
