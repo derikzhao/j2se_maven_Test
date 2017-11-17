@@ -19,10 +19,13 @@ public class TestLambda {
 
     public static void testAggregate() {
         List<Hero> heros = new ArrayList<Hero>();
-        for (int i = 0; i < 50000; i++) {
-            heros.add(new Hero("hero " + i));
+        for (int i = 0; i < 50; i++) {
+            heros.add(new Hero("hero_" + i));
         }
-        heros.stream().filter(h -> h.hp > 0);
+
+        heros.stream()
+                .filter(h -> h.hp >= 0)
+                .forEach(h -> System.out.println(h.name));
 
     }
 }
